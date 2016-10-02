@@ -2,7 +2,7 @@
 require 'csv'
 require_relative 'Brother'
 
-def public_getBrothers
+def get_brothers
 
   brothers = Array.new
   CSV.foreach('Records/manage-users-list.csv') do |x|
@@ -15,6 +15,20 @@ def public_getBrothers
     newBro = Brother.new(firstname, lastName, email, phone)
     brothers.push(newBro)
   end
+
+  CSV.foreach('Records/Brothers Swipe Info.csv') do |x|
+    #read the line and assign variables
+    name = x[0]
+    swipe_number = x[1]
+
+    #search the brothers list and assign the swipe info to each brother object
+    for brother in brothers
+      if name.include? brother.lastname
+        brother.set_swipe_info(swipe_number)
+      end
+    end
+  end
+
 
   return brothers
 end

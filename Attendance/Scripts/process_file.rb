@@ -21,7 +21,7 @@ class ProcessFile
     #Iterate through the text file
 
     @file.readlines.each() do |x|
-      puts x
+     # puts x
     end
 
 

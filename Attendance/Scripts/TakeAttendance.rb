@@ -12,7 +12,7 @@ class TakeAttendance
 
   def get_brother_list
     puts 'Getting Brothers...'
-    @brother_list = public_getBrothers
+    @brother_list = get_brothers
   end
 
   def get_brother_attendance
@@ -48,7 +48,7 @@ end
 #
 attendance = TakeAttendance.new
 bro = Brother.new('b', 'b', 'b', 'b')
-bro.sayHello
+bro.say_hello
 
 attendance.get_brother_list
 attendance.get_brother_attendance

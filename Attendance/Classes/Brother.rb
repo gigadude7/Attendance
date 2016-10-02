@@ -2,6 +2,8 @@
 
 class Brother
 
+  @swipe_info
+
   def initialize(first_name, last_name, email, phone_number)
     @first_name = first_name
     @last_name = last_name
@@ -21,5 +23,8 @@ class Brother
     @last_name
   end
 
+  def set_swipe_info(swipe_info)
+    @swipe_info = swipe_info
+  end
 
 end
