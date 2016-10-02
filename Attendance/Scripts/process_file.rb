@@ -20,14 +20,12 @@ class ProcessFile
   def process_file
     #Iterate through the text file
 
-      @file.readlines.each() do |x|
-        puts x
-      end
+    @file.readlines.each() do |x|
+      puts x
+    end
 
 
-
-
-      #If a brother is found, remove them from @brother_list
+    #If a brother is found, remove them from @brother_list
 
     #set brothers_with_absences
 

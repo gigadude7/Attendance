@@ -10,53 +10,36 @@ require_relative 'process_file'
 #Make Text file to display who has absences 
 class TakeAttendance
 
-	def get_brother_list
-		puts 'Getting Brothers...'
+  def get_brother_list
+    puts 'Getting Brothers...'
     @brother_list = public_getBrothers
-	end 
+  end
 
-	def get_brother_attendance
-		puts 'Getting Attendance...'
-		p = ProcessFile.new('./Records/9_26_16.txt', @brother_list)
-
-
-
-	end
-	
-	def assign_absences
-		puts 'Assigning Absences...'
-		
-		
-		
-		
-		
-		
-	end 
-	
-	def get_brother_absences
-		puts 'Getting Brother Absences...'
-		
-		
-		
-		
-		
-		
-	end 
-	
-	def create_absence_file
-		puts 'Creating Absence File...'
-		
-		
-		
-		
-		
-		
-	end 
-end 
+  def get_brother_attendance
+    puts 'Getting Attendance...'
+    p = ProcessFile.new('./Records/9_26_16.txt', @brother_list)
 
 
+  end
+
+  def assign_absences
+    puts 'Assigning Absences...'
 
 
+  end
+
+  def get_brother_absences
+    puts 'Getting Brother Absences...'
+
+
+  end
+
+  def create_absence_file
+    puts 'Creating Absence File...'
+
+
+  end
+end
 
 
 #

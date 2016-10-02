@@ -2,25 +2,24 @@
 
 class Brother
 
-def initialize(first_name, last_name, email, phone_number) 
-	@first_name = first_name
-	@last_name = last_name
-	@email = email
-	@phone_number = phone_number
-end 
+  def initialize(first_name, last_name, email, phone_number)
+    @first_name = first_name
+    @last_name = last_name
+    @email = email
+    @phone_number = phone_number
+  end
 
-def sayHello
-    return "I am #{@first_name} #{@last_name} and my email is: #{@email}"
+  def say_hello
+    "I am #{@first_name} #{@last_name} and my email is: #{@email}"
+  end
+
+  def firstname
+    @first_name
+  end
+
+  def lastname
+    @last_name
+  end
+
+
 end
-
-	def firstname
-		return @first_name
-	end
-
-	def lastname
-		return @last_name
-	end
-
-
-
-end 
