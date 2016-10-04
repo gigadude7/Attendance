@@ -3,6 +3,7 @@
 class Brother
 
   @swipe_info
+  @number_of_absences
 
   def initialize(first_name, last_name, email, phone_number)
     @first_name = first_name
@@ -23,8 +24,17 @@ class Brother
     @last_name
   end
 
+  def swipe_info
+    @swipe_info
+  end
+
   def set_swipe_info(swipe_info)
     @swipe_info = swipe_info
   end
+
+  def add_absence
+    @number_of_absences = @number_of_absences + 1
+  end
+
 
 end

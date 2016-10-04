@@ -17,9 +17,11 @@ class TakeAttendance
 
   def get_brother_attendance
     puts 'Getting Attendance...'
-    p = ProcessFile.new('./Records/9_26_16.txt', @brother_list)
-
-
+    sept_26 = ProcessFile.new('./Records/9_26_16.txt', @brother_list)
+    bid_aceptance = ProcessFile.new('./Records/Bid Acceptance.txt', @brother_list)
+    aug_29 = ProcessFile.new('./Records/Brothers 8_29_16.txt', @brother_list)
+    sept_19 = ProcessFile.new('./Records/Brothers 9_19.txt', @brother_list)
+    sept_12 = ProcessFile.new('./Records/Chapter_9_12.txt', @brother_list)
   end
 
   def assign_absences

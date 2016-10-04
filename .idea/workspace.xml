@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aff6c738-b622-45df-b51b-70988e2ce807" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Attendance/Records/Brothers.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Attendance/Classes/absence.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Classes/Brother.rb" afterPath="$PROJECT_DIR$/Attendance/Classes/Brother.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb" afterPath="$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Records/Brothers Swipe Info.csv" afterPath="$PROJECT_DIR$/Attendance/Records/Brothers Swipe Info.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Records/manage-users-list.csv" afterPath="$PROJECT_DIR$/Attendance/Records/manage-users-list.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb" afterPath="$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Attendance/Scripts/process_file.rb" afterPath="$PROJECT_DIR$/Attendance/Scripts/process_file.rb" />
     </list>
@@ -25,8 +21,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/untitled@TakeAttendance.coverage" NAME="TakeAttendance Coverage Results" MODIFIED="1475209937342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/Attendance@get_brothers_from_CSV.coverage" NAME="get_brothers_from_CSV Coverage Results" MODIFIED="1475443851026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance" MODULE_NAME="untitled" />
-    <SUITE FILE_PATH="coverage/Attendance@process_file.coverage" NAME="process_file Coverage Results" MODIFIED="1475441626218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance/Scripts" MODULE_NAME="untitled" />
-    <SUITE FILE_PATH="coverage/Attendance@TakeAttendance.coverage" NAME="TakeAttendance Coverage Results" MODIFIED="1475443852834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance" MODULE_NAME="untitled" />
+    <SUITE FILE_PATH="coverage/Attendance@process_file.coverage" NAME="process_file Coverage Results" MODIFIED="1475444795643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance/Scripts" MODULE_NAME="untitled" />
+    <SUITE FILE_PATH="coverage/Attendance@TakeAttendance.coverage" NAME="TakeAttendance Coverage Results" MODIFIED="1475603333783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@ruby_debug_ide.coverage" NAME="ruby-debug-ide Coverage Results" MODIFIED="1475207980000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/Library/Ruby/Gems/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/Attendance@Brother.coverage" NAME="Brother Coverage Results" MODIFIED="1475443761277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance/Classes" MODULE_NAME="untitled" />
     <SUITE FILE_PATH="coverage/untitled@get_brothers_from_CSV.coverage" NAME="get_brothers_from_CSV Coverage Results" MODIFIED="1475208999157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attendance" MODULE_NAME="untitled" />
@@ -43,8 +39,8 @@
       <file leaf-file-name="TakeAttendance.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+            <state relative-caret-position="320">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,57 +50,27 @@
         <entry file="file://$PROJECT_DIR$/Attendance/Classes/Brother.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process_file.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="process_file.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Attendance/Scripts/process_file.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="80">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_brothers_from_CSV.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb">
+      <file leaf-file-name="absence.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Attendance/Classes/absence.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage-users-list.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Attendance/Records/manage-users-list.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csv.rb" pinned="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/csv.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="1772" column="0" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ruby-debug-ide.rb" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Ruby/Gems/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+            <state relative-caret-position="75">
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -128,12 +94,13 @@
         <option value="$PROJECT_DIR$/Attendance/Brother.rb" />
         <option value="$PROJECT_DIR$/Attendance/get_brothers_from_CSV.rb" />
         <option value="$PROJECT_DIR$/Attendance/TakeAttendance.rb" />
-        <option value="$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb" />
-        <option value="$PROJECT_DIR$/Attendance/Scripts/process_file.rb" />
         <option value="$PROJECT_DIR$/Attendance/Records/Brothers Swipe Info.csv" />
         <option value="$PROJECT_DIR$/Attendance/Records/manage-users-list.csv" />
-        <option value="$PROJECT_DIR$/Attendance/Classes/Brother.rb" />
         <option value="$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/Brother.rb" />
+        <option value="$PROJECT_DIR$/Attendance/Scripts/process_file.rb" />
+        <option value="$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb" />
+        <option value="$PROJECT_DIR$/Attendance/Classes/absence.rb" />
       </list>
     </option>
   </component>
@@ -156,7 +123,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -491,9 +458,9 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Ruby.TakeAttendance" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.get_brothers_from_CSV" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.Brother" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.process_file" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.process_file" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.get_brothers_from_CSV" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.Brother" />
       </list>
     </recent_temporary>
   </component>
@@ -509,7 +476,7 @@
       <updated>1475205672122</updated>
       <workItem from="1475205674041" duration="3347000" />
       <workItem from="1475291778999" duration="39000" />
-      <workItem from="1475291865168" duration="5892000" />
+      <workItem from="1475291865168" duration="7587000" />
     </task>
     <task id="LOCAL-00001" summary="- Updated Swipe info CSV to match correct format">
       <created>1475440051339</created>
@@ -525,11 +492,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475440611341</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correctly reads and assigns swipe info to brother objects now">
+      <created>1475443910713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1475443910714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9278000" />
+    <option name="totallyTimeSpent" value="10973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="42" width="1400" height="794" extended-state="0" />
@@ -569,18 +543,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Updated Swipe info CSV to match correct format" />
     <MESSAGE value="Fixed Indentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Indentation" />
+    <MESSAGE value="Correctly reads and assigns swipe info to brother objects now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correctly reads and assigns swipe info to brother objects now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb</url>
-          <line>32</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb</url>
+          <line>27</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -633,26 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Ruby/Gems/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Attendance/Records/Brothers.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/csv.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="1772" column="0" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -673,34 +632,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Brother.rb">
+    <entry file="file:///System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/csv.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+        <state relative-caret-position="331">
+          <caret line="1772" column="0" selection-start-line="1772" selection-start-column="0" selection-end-line="1772" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Attendance/Classes/get_brothers_from_CSV.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="305">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Ruby/Gems/2.0.0/gems/ruby-debug-ide-0.6.1.beta2/lib/ruby-debug-ide.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Scripts/TakeAttendance.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Attendance/Scripts/process_file.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="80">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/Brother.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Attendance/Classes/absence.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
