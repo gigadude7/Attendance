@@ -17,22 +17,22 @@ class TakeAttendance
 
   def get_brother_attendance
     puts 'Getting Attendance...'
-    sept_26 = ProcessFile.new('./Records/9_26_16.txt', @brother_list)
-    bid_aceptance = ProcessFile.new('./Records/Bid Acceptance.txt', @brother_list)
-    aug_29 = ProcessFile.new('./Records/Brothers 8_29_16.txt', @brother_list)
-    sept_19 = ProcessFile.new('./Records/Brothers 9_19.txt', @brother_list)
-    sept_12 = ProcessFile.new('./Records/Chapter_9_12.txt', @brother_list)
-  end
 
-  def assign_absences
-    puts 'Assigning Absences...'
-
-
+    pf = ProcessFile.new(@brother_list)
+    pf.read_file('./Records/9_26_16.txt')
+    pf.read_file('./Records/Bid Acceptance.txt')
+    pf.read_file('./Records/Bid Acceptance.txt')
+    pf.read_file('./Records/Brothers 8_29_16.txt')
+    pf.read_file('./Records/Brothers 9_19.txt')
+    pf.read_file('./Records/Chapter_9_12.txt')
+    pf.read_file('./Records/10_3_16.txt')
   end
 
   def get_brother_absences
     puts 'Getting Brother Absences...'
-
+    @brother_list.each do | x |
+        puts "#{x.firstname} #{x.lastname}: #{x.number_of_absences} absences."
+    end
 
   end
 
@@ -49,11 +49,7 @@ end
 #	MIGHT BE EXTRACTED LATER 
 #
 attendance = TakeAttendance.new
-bro = Brother.new('b', 'b', 'b', 'b')
-bro.say_hello
-
 attendance.get_brother_list
 attendance.get_brother_attendance
-attendance.assign_absences
-attendance.get_brother_attendance
+attendance.get_brother_absences
 attendance.create_absence_file

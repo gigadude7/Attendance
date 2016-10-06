@@ -1,44 +1,60 @@
 class ProcessFile
 
-  def initialize(file_path, brother_list)
-    @file_path = file_path
+  ###############################
+  # Initializer And Load Methods
+  ###############################
+
+  def initialize(brother_list)
     @brother_list = brother_list
-    @brothers_in_attendance = Array.new
+    @brothers_swipe_info = Array.new
+    @file_lines = Array.new
+  end
+
+  def read_file (file_name)
+    @file_path = file_name
+    get_brothers_swipe_info
     open_file
     process_file
   end
 
-  def open_file
-    @file = File.open(@file_path, 'r')
+
+  ###############################
+  # Swipe Info Handlers
+  ###############################
+
+  def get_brothers_swipe_info
+    @brother_list.each do |x|
+      if i = x.swipe_info
+       @brothers_swipe_info.push(i.chomp("\n"))
+      end
+    end
   end
 
-  #PURPOSE:       To figure out which brothers were absent
-  #BEGIN STATE:   Empty array of Brothers with absences
-  #END STATE:     Array of Brother Names that were absent at this event
-  def process_file
-
-    #Iterate through the text file of brother swipe info
-    @file.readlines.each() do |x|
-      for bro in @brother_list
-
-
-        if bro.swipe_info != nil
-          if x.include? bro.swipe_info
-
-            @brothers_in_attendance.push(bro)
-
-          end
-        end
-
-
+  def get_brother_with_info(swipe_info)
+    @brother_list.each do |x|
+      if x.swipe_info == swipe_info
+        return x
       end
-
-
     end
+  end
 
-    #If a brother is found, remove them from @brother_list
+  ###############################
+  # Method Implementation
+  ###############################
 
-    #set brothers_with_absences
+  def open_file
+    @file = File.open(@file_path, 'r')
+    @file.readlines.each do |x|
+      @file_lines.push(x.chomp("\n"))
+    end
+  end
 
+  def process_file
+    @brothers_swipe_info.each do |x|
+      unless @file_lines.include?(x)
+        bro = get_brother_with_info(x)
+        bro.add_absence
+      end
+    end
   end
 end

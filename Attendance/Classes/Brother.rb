@@ -10,6 +10,7 @@ class Brother
     @last_name = last_name
     @email = email
     @phone_number = phone_number
+    @number_of_absences = 0
   end
 
   def say_hello
@@ -30,6 +31,10 @@ class Brother
 
   def set_swipe_info(swipe_info)
     @swipe_info = swipe_info
+  end
+
+  def number_of_absences
+    @number_of_absences
   end
 
   def add_absence
