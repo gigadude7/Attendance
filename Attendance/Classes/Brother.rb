@@ -3,14 +3,13 @@
 class Brother
 
   @swipe_info
-  @number_of_absences
 
   def initialize(first_name, last_name, email, phone_number)
     @first_name = first_name
     @last_name = last_name
     @email = email
     @phone_number = phone_number
-    @number_of_absences = 0
+    @number_of_absences = Array.new
   end
 
   def say_hello
@@ -37,8 +36,10 @@ class Brother
     @number_of_absences
   end
 
-  def add_absence
-    @number_of_absences = @number_of_absences + 1
+  def add_absence(absence)
+    unless @number_of_absences.include?(absence)
+      @number_of_absences.push(absence)
+    end
   end
 
 

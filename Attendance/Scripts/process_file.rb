@@ -15,6 +15,7 @@ class ProcessFile
     get_brothers_swipe_info
     open_file
     process_file
+    close_file
   end
 
 
@@ -53,8 +54,13 @@ class ProcessFile
     @brothers_swipe_info.each do |x|
       unless @file_lines.include?(x)
         bro = get_brother_with_info(x)
-        bro.add_absence
+        bro.add_absence(@file_path)
       end
     end
   end
+
+  def close_file
+    @file.close
+  end
+
 end
