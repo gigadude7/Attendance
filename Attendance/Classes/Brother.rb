@@ -28,6 +28,10 @@ class Brother
     @swipe_info
   end
 
+  def name
+    "#{@first_name} #{@last_name}"
+  end
+
   def set_swipe_info(swipe_info)
     @swipe_info = swipe_info
   end
@@ -40,6 +44,10 @@ class Brother
     unless @number_of_absences.include?(absence)
       @number_of_absences.push(absence)
     end
+  end
+
+  def remove_absence
+    @number_of_absences.delete_at(@number_of_absences.count -1)
   end
 
 

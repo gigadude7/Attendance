@@ -19,19 +19,22 @@ class TakeAttendance
     puts 'Getting Attendance...'
 
     pf = ProcessFile.new(@brother_list)
+    # pf.read_file('./Records/*')
     pf.read_file('./Records/9_26_16.txt')
     pf.read_file('./Records/Bid Acceptance.txt')
     pf.read_file('./Records/Brothers 8_29_16.txt')
     pf.read_file('./Records/Brothers 9_19.txt')
     pf.read_file('./Records/Chapter_9_12.txt')
     pf.read_file('./Records/10_3_16.txt')
+    pf.read_file('./Records/10_10.txt')
+    pf.read_file('./Records/Manual')
   end
 
   def get_brother_absences
     puts 'Getting Brother Absences...'
     @brother_list.each do | x |
-       unless x.number_of_absences == []
-       puts "#{x.firstname} #{x.lastname}: #{x.number_of_absences.count} absences."
+       unless x.number_of_absences == [] || (x.firstname == 'Grant' || x.firstname == 'Tripp' || x.lastname == 'Tillery' || x.firstname == 'Hunter' || x.firstname == 'Devin' || x.lastname == 'Barrentine')
+       puts "#{x.firstname} #{x.lastname}: #{x.number_of_absences} absences."
        end
     end
 
@@ -39,7 +42,6 @@ class TakeAttendance
 
   def create_absence_file
     puts 'Creating Absence File...'
-
 
   end
 end
